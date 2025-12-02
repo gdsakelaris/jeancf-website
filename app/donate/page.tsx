@@ -122,7 +122,7 @@ export default function DonatePage() {
                   value={customAmount}
                   onChange={(e) => handleCustomAmountChange(e.target.value)}
                   placeholder="Enter custom amount"
-                  className="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none text-lg placeholder:text-gray-600"
+                  className="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none text-lg text-gray-900 placeholder:text-gray-600"
                 />
               </div>
             </div>
