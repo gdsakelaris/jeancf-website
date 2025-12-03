@@ -20,9 +20,9 @@ function SuccessContent() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-amber-50 flex items-center justify-center">
+      <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading...</p>
         </div>
       </div>
@@ -31,10 +31,10 @@ function SuccessContent() {
 
   if (!sessionId) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-amber-50 flex items-center justify-center px-4">
+      <div className="min-h-screen bg-white flex items-center justify-center px-4">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Invalid Session</h1>
-          <Link href="/donate" className="text-emerald-600 hover:text-emerald-700 font-medium">
+          <Link href="/donate" className="text-red-600 hover:text-red-700 font-medium">
             Return to Donate Page
           </Link>
         </div>
@@ -43,23 +43,23 @@ function SuccessContent() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-amber-50">
-      <nav className="border-b border-amber-100 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+    <div className="min-h-screen bg-white">
+      <nav className="border-b border-gray-200 bg-black/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">JCF</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Jean Cares Fund</span>
+            <span className="text-xl font-bold text-white">Jean Cares Fund</span>
           </Link>
         </div>
       </nav>
 
       <main className="max-w-2xl mx-auto px-4 py-16">
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center border border-emerald-100">
-          <div className="w-20 h-20 bg-gradient-to-br from-emerald-100 to-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center border-2 border-gray-200">
+          <div className="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg
-              className="w-10 h-10 text-emerald-600"
+              className="w-10 h-10 text-red-600"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -81,7 +81,7 @@ function SuccessContent() {
             Your donation joins a legacy of compassion. Every gift helps ensure that children have access to nourishing food and builds stronger, more equitable communities.
           </p>
 
-          <div className="bg-gradient-to-r from-emerald-50 to-amber-50 rounded-xl p-6 mb-8 border border-emerald-200">
+          <div className="bg-red-50 rounded-xl p-6 mb-8 border border-red-200">
             <p className="text-sm text-gray-600 mb-2">Transaction ID</p>
             <p className="text-sm font-mono text-gray-800 break-all">{sessionId}</p>
           </div>
@@ -92,10 +92,10 @@ function SuccessContent() {
             </p>
           </div>
 
-          <div className="mt-8 pt-8 border-t border-amber-100">
+          <div className="mt-8 pt-8 border-t border-gray-200">
             <Link
               href="/"
-              className="inline-block bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+              className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
             >
               Return to Home
             </Link>
@@ -105,7 +105,7 @@ function SuccessContent() {
         <div className="mt-8 text-center">
           <p className="text-gray-700">
             Questions about your donation?{" "}
-            <a href="mailto:contact@jeancaresfund.org" className="text-emerald-600 hover:text-emerald-700 font-medium">
+            <a href="mailto:contact@jeancaresfund.org" className="text-red-600 hover:text-red-700 font-medium">
               Get in touch with us
             </a>
           </p>
@@ -119,9 +119,9 @@ export default function SuccessPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-amber-50 flex items-center justify-center">
+        <div className="min-h-screen bg-white flex items-center justify-center">
           <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-600 mx-auto"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto"></div>
             <p className="mt-4 text-gray-600">Loading...</p>
           </div>
         </div>

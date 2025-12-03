@@ -60,14 +60,14 @@ export default function DonatePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-amber-50">
-      <nav className="border-b border-amber-100 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+    <div className="min-h-screen bg-white">
+      <nav className="border-b border-gray-200 bg-black/95 backdrop-blur-sm sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <div className="w-12 h-12 bg-gradient-to-br from-amber-500 via-orange-500 to-rose-500 rounded-lg flex items-center justify-center">
+            <div className="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">JCF</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Jean Cares Fund</span>
+            <span className="text-xl font-bold text-white">Jean Cares Fund</span>
           </Link>
         </div>
       </nav>
@@ -82,7 +82,7 @@ export default function DonatePage() {
           </p>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-amber-100">
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2 border-gray-200">
           <div className="mb-8">
             <label className="block text-sm font-semibold text-gray-900 mb-4">
               Choose Your Impact
@@ -94,7 +94,7 @@ export default function DonatePage() {
                   onClick={() => handlePresetClick(value)}
                   className={`py-3 px-4 rounded-lg font-semibold transition-all ${
                     selectedPreset === value
-                      ? "bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md"
+                      ? "bg-red-600 text-white shadow-md"
                       : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                   }`}
                 >
@@ -118,16 +118,16 @@ export default function DonatePage() {
                   value={customAmount}
                   onChange={(e) => handleCustomAmountChange(e.target.value)}
                   placeholder="Enter custom amount"
-                  className="w-full pl-8 pr-4 py-3 border-2 border-amber-200 rounded-lg focus:border-emerald-500 focus:outline-none text-lg text-gray-900 placeholder:text-gray-600"
+                  className="w-full pl-8 pr-4 py-3 border-2 border-gray-300 rounded-lg focus:border-red-600 focus:outline-none text-lg text-gray-900 placeholder:text-gray-600"
                 />
               </div>
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-emerald-50 to-amber-50 rounded-xl p-6 mb-8 border border-emerald-200">
+          <div className="bg-red-50 rounded-xl p-6 mb-8 border border-red-200">
             <div className="flex justify-between items-center">
               <span className="text-gray-700 font-medium">Your Donation:</span>
-              <span className="text-3xl font-bold bg-gradient-to-r from-emerald-600 to-amber-600 bg-clip-text text-transparent">
+              <span className="text-3xl font-bold text-red-600">
                 ${amount.toFixed(2)}
               </span>
             </div>
@@ -136,7 +136,7 @@ export default function DonatePage() {
           <button
             onClick={handleDonate}
             disabled={loading || amount < 1}
-            className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 disabled:from-gray-400 disabled:to-gray-400 disabled:cursor-not-allowed text-white py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
+            className="w-full bg-red-600 hover:bg-red-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
           >
             {loading ? "Processing..." : "Continue to Payment"}
           </button>
@@ -153,7 +153,7 @@ export default function DonatePage() {
           <p className="text-gray-700 mb-6 max-w-xl mx-auto leading-relaxed">
             All donations are processed securely and go directly to supporting our mission of ensuring children have access to nourishing food and building equitable community systems.
           </p>
-          <Link href="/" className="inline-block text-emerald-600 hover:text-emerald-700 font-semibold transition-colors">
+          <Link href="/" className="inline-block text-red-600 hover:text-red-700 font-semibold transition-colors">
             &larr; Back to Home
           </Link>
         </div>
