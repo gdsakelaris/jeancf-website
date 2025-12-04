@@ -120,6 +120,7 @@ export default function Home() {
                     alt="Dignified Care"
                     fill
                     className="object-cover"
+                    style={{ objectPosition: 'center 25%' }}
                   />
                 </div>
                 <div className="p-6">
