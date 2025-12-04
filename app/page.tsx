@@ -79,40 +79,55 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-gray-900 mb-16 text-center">What We Do</h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white p-10 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-red-600">
-                <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
-                  <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+              <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow overflow-hidden border-t-4 border-red-600">
+                <div className="relative w-full h-48">
+                  <Image
+                    src="/strategic-grants.jpg"
+                    alt="Strategic Grants"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Strategic Grants</h3>
-                <p className="text-gray-700">
-                  We provide targeted funding to proven food security programs that directly serve children in need.
-                </p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Strategic Grants</h3>
+                  <p className="text-gray-700">
+                    We provide targeted funding to proven food security programs that directly serve children in need.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-white p-10 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-red-600">
-                <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
-                  <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                  </svg>
+              <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow overflow-hidden border-t-4 border-red-600">
+                <div className="relative w-full h-48">
+                  <Image
+                    src="/community-systems.jpg"
+                    alt="Community Systems"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Community Systems</h3>
-                <p className="text-gray-700">
-                  We build sustainable food access systems that create equitable, dependable nutrition for entire communities.
-                </p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Community Systems</h3>
+                  <p className="text-gray-700">
+                    We build sustainable food access systems that create equitable, dependable nutrition for entire communities.
+                  </p>
+                </div>
               </div>
 
-              <div className="bg-white p-10 rounded-2xl shadow-md hover:shadow-xl transition-shadow border-t-4 border-red-600">
-                <div className="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6">
-                  <svg className="w-7 h-7 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m7 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
+              <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow overflow-hidden border-t-4 border-red-600">
+                <div className="relative w-full h-48">
+                  <Image
+                    src="/dignified-care.jpg"
+                    alt="Dignified Care"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">Dignified Care</h3>
-                <p className="text-gray-700">
-                  Every program we support treats children and families with the respect and dignity they deserve.
-                </p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">Dignified Care</h3>
+                  <p className="text-gray-700">
+                    Every program we support treats children and families with the respect and dignity they deserve.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
