@@ -74,17 +74,17 @@ export default function Home() {
                 {/* First Text Block */}
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p className="text-lg">
-                    My mother had a deep passion for ensuring that every child she cared for was fed, even when she didn't always have the means. With strong faith and unwavering belief, she demonstrated that no obstacle is too great when compassion guides us.
+                    My mother had a deep passion for ensuring that every child she cared for was fed, even when she didn&apos;t always have the means. With strong faith and unwavering belief, she demonstrated that no obstacle is too great when compassion guides us.
                   </p>
                   <p className="text-lg">
-                    Her example showed us that generosity isn't just about what we give—it's about the multiplying effect of community care. One person's commitment can transform into systemic change.
+                    Her example showed us that generosity isn&apos;t just about what we give—it&apos;s about the multiplying effect of community care. One person&apos;s commitment can transform into systemic change.
                   </p>
                 </div>
 
                 {/* Quote Block */}
                 <div className="bg-red-50 rounded-2xl p-8 border-l-4 border-red-600">
                   <p className="text-2xl font-bold text-gray-900 mb-4">
-                    "Five loaves and two fishes"
+                    &ldquo;Five loaves and two fishes&rdquo;
                   </p>
                   <p className="text-lg text-gray-700 italic">
                     We partner and give grants to programs that ensure children receive the nourishment they need, not only to survive, but to thrive. By taking the baton from my mother, we honor her example and work to build community systems where access to food is equitable, dependable, and rooted in dignity.
