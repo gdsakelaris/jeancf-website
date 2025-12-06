@@ -2,8 +2,10 @@
 
 import { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import Image from "next/image";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import LoadingSpinner from "@/components/LoadingSpinner";
+import { BRAND, ROUTES } from "@/lib/constants";
 
 function SuccessContent() {
   const searchParams = useSearchParams();
@@ -19,14 +21,7 @@ function SuccessContent() {
   }, [sessionId]);
 
   if (loading) {
-    return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading...</p>
-        </div>
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   if (!sessionId) {
@@ -34,7 +29,7 @@ function SuccessContent() {
       <div className="min-h-screen bg-white flex items-center justify-center px-4">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Invalid Session</h1>
-          <Link href="/donate" className="text-red-600 hover:text-red-700 font-medium">
+          <Link href={ROUTES.donate} className="text-red-600 hover:text-red-700 font-medium">
             Return to Donate Page
           </Link>
         </div>
@@ -44,20 +39,7 @@ function SuccessContent() {
 
   return (
     <div className="min-h-screen bg-white">
-      <nav className="border-b border-gray-200 bg-black/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <Image
-              src="/logo_square.png"
-              alt="Jean Cares Fund Logo"
-              width={50}
-              height={50}
-              className="rounded-lg"
-            />
-            <span className="text-xl font-bold text-white">Jean Cares Fund</span>
-          </Link>
-        </div>
-      </nav>
+      <Navbar showDonateButton={false} />
 
       <main className="max-w-2xl mx-auto px-4 py-16">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center border-2 border-gray-200">
@@ -98,7 +80,7 @@ function SuccessContent() {
 
           <div className="mt-8 pt-8 border-t border-gray-200">
             <Link
-              href="/"
+              href={ROUTES.home}
               className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
             >
               Return to Home
@@ -109,7 +91,7 @@ function SuccessContent() {
         <div className="mt-8 text-center">
           <p className="text-gray-700">
             Questions about your donation?{" "}
-            <a href="mailto:contact@jeancaresfund.org" className="text-red-600 hover:text-red-700 font-medium">
+            <a href={`mailto:${BRAND.email}`} className="text-red-600 hover:text-red-700 font-medium">
               Get in touch with us
             </a>
           </p>
@@ -121,16 +103,7 @@ function SuccessContent() {
 
 export default function SuccessPage() {
   return (
-    <Suspense
-      fallback={
-        <div className="min-h-screen bg-white flex items-center justify-center">
-          <div className="text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mx-auto"></div>
-            <p className="mt-4 text-gray-600">Loading...</p>
-          </div>
-        </div>
-      }
-    >
+    <Suspense fallback={<LoadingSpinner />}>
       <SuccessContent />
     </Suspense>
   );

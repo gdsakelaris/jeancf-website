@@ -1,29 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { ROUTES } from "@/lib/constants";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <nav className="border-b border-gray-200 bg-black/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Image
-              src="/logo_square.png"
-              alt="Jean Cares Fund Logo"
-              width={50}
-              height={50}
-              className="rounded-lg"
-            />
-            <span className="text-xl font-bold text-white">Jean Cares Fund</span>
-          </div>
-          <Link
-            href="/donate"
-            className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
-          >
-            Donate Now
-          </Link>
-        </div>
-      </nav>
+      <Navbar />
 
       <main>
         {/* Hero Section */}
@@ -39,7 +23,7 @@ export default function Home() {
               She lived by the biblical parable of using five loaves of bread to feed thousands, trusting that compassion and service multiply what we give.
             </p>
             <Link
-              href="/donate"
+              href={ROUTES.donate}
               className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
             >
               Support Children's Nutrition
@@ -163,7 +147,7 @@ export default function Home() {
               Just like the biblical parable of five loaves feeding thousands, your generosity creates a ripple effect. Strategic grants to proven programs mean your donation reaches children and transforms communities.
             </p>
             <Link
-              href="/donate"
+              href={ROUTES.donate}
               className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
             >
               Make an Impact Today
@@ -172,34 +156,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-gray-800 py-12 bg-black">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h4 className="font-bold text-white mb-4">Jean Cares Fund</h4>
-              <p className="text-gray-400 text-sm">
-                Addressing food insecurity for children through compassionate giving and community partnership.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/donate" className="text-gray-400 hover:text-red-600">Donate</Link></li>
-                <li><Link href="/" className="text-gray-400 hover:text-red-600">Home</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Contact</h4>
-              <p className="text-gray-400 text-sm">
-                Questions about our mission? We'd love to hear from you.
-              </p>
-            </div>
-          </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-600 text-sm">
-            <p>&copy; {new Date().getFullYear()} Jean Cares Fund. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

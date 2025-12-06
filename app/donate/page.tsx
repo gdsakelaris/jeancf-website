@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-
-const presetAmounts = [25, 50, 100, 250, 500];
+import Navbar from "@/components/Navbar";
+import { PRESET_AMOUNTS, API_ROUTES, ROUTES, VALIDATION } from "@/lib/constants";
 
 export default function DonatePage() {
   const [amount, setAmount] = useState<number>(100);
@@ -28,15 +27,15 @@ export default function DonatePage() {
   };
 
   const handleDonate = async () => {
-    if (amount < 1) {
-      alert("Please enter a donation amount of at least $1");
+    if (amount < VALIDATION.minDonationAmount) {
+      alert(`Please enter a donation amount of at least $${VALIDATION.minDonationAmount}`);
       return;
     }
 
     setLoading(true);
 
     try {
-      const response = await fetch("/api/create-checkout-session", {
+      const response = await fetch(API_ROUTES.createCheckoutSession, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -61,20 +60,7 @@ export default function DonatePage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <nav className="border-b border-gray-200 bg-black/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-            <Image
-              src="/logo_square.png"
-              alt="Jean Cares Fund Logo"
-              width={50}
-              height={50}
-              className="rounded-lg"
-            />
-            <span className="text-xl font-bold text-white">Jean Cares Fund</span>
-          </Link>
-        </div>
-      </nav>
+      <Navbar showDonateButton={false} />
 
       <main className="max-w-2xl mx-auto px-4 py-16">
         <div className="text-center mb-12">
@@ -89,10 +75,10 @@ export default function DonatePage() {
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border-2 border-gray-200">
           <div className="mb-8">
             <label className="block text-sm font-semibold text-gray-900 mb-4">
-              Choose Your Impact
+              Choose Your Donation
             </label>
             <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mb-6">
-              {presetAmounts.map((value) => (
+              {PRESET_AMOUNTS.map((value) => (
                 <button
                   key={value}
                   onClick={() => handlePresetClick(value)}
@@ -139,7 +125,7 @@ export default function DonatePage() {
 
           <button
             onClick={handleDonate}
-            disabled={loading || amount < 1}
+            disabled={loading || amount < VALIDATION.minDonationAmount}
             className="w-full bg-red-600 hover:bg-red-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white py-4 rounded-lg font-semibold text-lg transition-all shadow-lg hover:shadow-xl"
           >
             {loading ? "Processing..." : "Continue to Payment"}
@@ -157,7 +143,7 @@ export default function DonatePage() {
           <p className="text-gray-700 mb-6 max-w-xl mx-auto leading-relaxed">
             All donations are processed securely and go directly to supporting our mission of ensuring children have access to nourishing food and building equitable community systems.
           </p>
-          <Link href="/" className="inline-block text-red-600 hover:text-red-700 font-semibold transition-colors">
+          <Link href={ROUTES.home} className="inline-block text-red-600 hover:text-red-700 font-semibold transition-colors">
             &larr; Back to Home
           </Link>
         </div>
