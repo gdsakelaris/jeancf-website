@@ -54,7 +54,7 @@ export default function Home() {
 
             <div className="grid md:grid-cols-2 gap-0 items-center">
               {/* Left - Image */}
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center mb-12 md:mb-0">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-red-600 w-72">
                   <Image
                     src="/mother.jpg"
