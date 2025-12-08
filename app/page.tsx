@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AnimatedHero from "@/components/AnimatedHero";
 import { ROUTES } from "@/lib/constants";
 
 export default function Home() {
@@ -11,25 +12,7 @@ export default function Home() {
 
       <main>
         {/* Hero Section */}
-        <section className="bg-black py-20">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              No Child Should Go Hungry
-            </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4 leading-relaxed">
-              Addressing food insecurity for children isn't just a mission—it's a continuation of my late mother's legacy.
-            </p>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-10">
-              She lived by the biblical parable of using five loaves of bread to feed thousands, trusting that compassion and service multiply what we give.
-            </p>
-            <Link
-              href={ROUTES.donate}
-              className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl"
-            >
-              Support Children's Nutrition
-            </Link>
-          </div>
-        </section>
+        <AnimatedHero />
 
         {/* Our Story Section */}
         <section className="py-20 bg-white">
