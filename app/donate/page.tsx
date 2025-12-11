@@ -139,10 +139,20 @@ export default function DonatePage() {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-gray-700 mb-6 max-w-xl mx-auto leading-relaxed">
-            All donations are processed securely and go directly to supporting our mission of ensuring children have access to nourishing food and building equitable community systems.
-          </p>
+        <div className="mt-12 text-center space-y-6">
+          <div className="text-gray-700 max-w-xl mx-auto">
+            <p className="font-semibold mb-1">Tax ID: 41-2349985</p>
+          </div>
+
+          <div className="text-gray-700 max-w-xl mx-auto leading-relaxed">
+            <p className="mb-3">If you would prefer to send a check, please send to:</p>
+            <div className="font-medium">
+              <p>Jean Cares Fund</p>
+              <p>8923 S Oglesby</p>
+              <p>Chicago, IL 60617</p>
+            </div>
+          </div>
+
           <Link href={ROUTES.home} className="inline-block text-red-600 hover:text-red-700 font-semibold transition-colors">
             &larr; Back to Home
           </Link>

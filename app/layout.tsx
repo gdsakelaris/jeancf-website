@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: "Support Jean Cares Fund's mission to help those in need through secure, tax-deductible donations. Your generosity makes a real difference in our community.",
   keywords: ["donation", "charity", "nonprofit", "Jean Cares Fund", "support", "giving"],
   icons: {
-    icon: "/logo_square.png",
+    icon: "../public/logo_square.png",
   },
 };
 
