@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-4">{BRAND.name}</h4>
             <p className="text-gray-400 text-sm">
-              Addressing food insecurity for children through compassionate giving and community partnership.
+              Addressing food insecurity through compassionate giving and community partnership.
             </p>
           </div>
           <div>
