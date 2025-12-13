@@ -77,7 +77,7 @@ export default function DonatePage() {
             <label className="block text-sm font-semibold text-gray-900 mb-4">
               Choose Your Donation
             </label>
-            <div className="grid grid-cols-3 md:grid-cols-5 gap-3 mb-6">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mb-6">
               {PRESET_AMOUNTS.map((value) => (
                 <button
                   key={value}

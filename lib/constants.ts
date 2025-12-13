@@ -1,5 +1,5 @@
 // Donation preset amounts
-export const PRESET_AMOUNTS = [25, 50, 100, 250, 500];
+export const PRESET_AMOUNTS = [25, 50, 100, 250, 500, 1000];
 
 // Brand information
 export const BRAND = {
