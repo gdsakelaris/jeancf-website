@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import TeamMember from '@/components/TeamMember';
+import { BRAND } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Our Team | Jean Cares Fund',
@@ -96,7 +97,7 @@ export default function TeamPage() {
               We are always looking for passionate individuals who share our commitment to ending childhood hunger. If you are interested in joining the Jean Cares Fund advisory committee or learning more about volunteer opportunities, please reach out.
             </p>
             <a
-              href="mailto:contact@jeancaresfund.org"
+              href={`mailto:${BRAND.email}`}
               className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg"
             >
               Contact Us

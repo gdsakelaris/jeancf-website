@@ -5,7 +5,7 @@ export const PRESET_AMOUNTS = [25, 50, 100, 250, 500, 1000];
 export const BRAND = {
   name: "Jean Cares Fund",
   tagline: "Making a Difference Through Compassionate Giving",
-  email: "contact@jeancaresfund.org",
+  email: "lee.lampley@lksmallus.com",
   logo: "/logo_square.png",
 } as const;
 
