@@ -13,10 +13,12 @@ const teamMembers = [
   {
     name: 'Lee Lampley',
     title: 'President',
-    image: '/team/lee-lampley.jpg',
-    bio: `Lee Lampley serves as President of the Jean Cares Fund, bringing extensive leadership experience and a deep commitment to addressing food insecurity for children. Their strategic vision and dedication to community service help guide the organization's mission to honor Jean's legacy of compassion and care.
+    image: '/leel.png',
+    bio: `Lee M. Lampley II, a former professional basketball player and current financier, launched LK Small as a tribute to his beloved siblings and father. Founded on family principles and rooted in community, LK Small is a minority-owned transportation and logistics company established in 2020 and headquartered in Chicago.
 
-Lee is passionate about building sustainable programs that provide dignified food access to families in need and ensuring that every child has the nutrition they need to thrive.`,
+Lee recalls at a very young age when his father loaded him and his siblings into their green station wagon for healthcare visits, for which they had to drive for miles to the suburbs. He later realized that the reason for travel was the lack of sufficient healthcare available in underserved communities like theirs.
+
+As President of the Jean Cares Fund, Lee brings this same commitment to addressing inequities in underserved communities, focusing on food insecurity for children and ensuring that every child has access to the nutrition they need to thrive.`,
   },
   {
     name: 'Madan Rajavel',
