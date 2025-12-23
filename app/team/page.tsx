@@ -18,13 +18,13 @@ const teamMembers = [
 
 Lee recalls at a very young age when his father loaded him and his siblings into their green station wagon for healthcare visits, for which they had to drive for miles to the suburbs. He later realized that the reason for travel was the lack of sufficient healthcare available in underserved communities like theirs.
 
-As President of the Jean Cares Fund, Lee brings this same commitment to addressing inequities in underserved communities, focusing on food insecurity for children and ensuring that every child has access to the nutrition they need to thrive.`,
+As President of LK Small, Lee brings this same commitment to addressing inequities in underserved communities, focusing on food insecurity for children and ensuring that every child has access to the nutrition they need to thrive.`,
   },
   {
     name: 'Madan Rajavel',
     title: 'Vice President',
     image: '/team/madan-rajavel.jpg',
-    bio: `Madan Rajavel serves as Vice President of the Jean Cares Fund, providing strategic leadership and operational guidance to support the organization's mission. With a strong commitment to social impact and community development, Madan helps ensure that the fund's programs effectively serve children facing food insecurity.
+    bio: `Madan Rajavel serves as Vice President of LK Small, providing strategic leadership and operational guidance to support the organization's mission. With a strong commitment to social impact and community development, Madan helps ensure that the fund's programs effectively serve children facing food insecurity.
 
 Madan's expertise and collaborative approach are instrumental in advancing the Jean Cares Fund's vision of a world where no child goes hungry.`,
   },
@@ -32,7 +32,7 @@ Madan's expertise and collaborative approach are instrumental in advancing the J
     name: 'Erin Hardnett',
     title: 'Secretary',
     image: '/team/erin-hardnett.jpg',
-    bio: `Erin Hardnett serves as Secretary of the Jean Cares Fund, ensuring effective governance and organizational management. With strong attention to detail and commitment to transparency, Erin helps maintain the integrity and accountability of the organization's operations.
+    bio: `Erin Hardnett serves as Secretary of LK Small, ensuring effective governance and organizational management. With strong attention to detail and commitment to transparency, Erin helps maintain the integrity and accountability of the organization's operations.
 
 Erin is dedicated to supporting the fund's mission of addressing childhood hunger through compassionate giving and community partnership.`,
   },
@@ -40,7 +40,7 @@ Erin is dedicated to supporting the fund's mission of addressing childhood hunge
     name: 'Jay Carter',
     title: 'Treasurer',
     image: '/team/jay-carter.jpg',
-    bio: `Jay Carter serves as Treasurer of the Jean Cares Fund, overseeing financial management and ensuring responsible stewardship of donor contributions. With expertise in nonprofit finance, Jay helps ensure that every dollar donated is used effectively to serve children in need.
+    bio: `Jay Carter serves as Treasurer of LK Small, overseeing financial management and ensuring responsible stewardship of donor contributions. With expertise in nonprofit finance, Jay helps ensure that every dollar donated is used effectively to serve children in need.
 
 Jay's commitment to financial transparency and accountability supports the fund's goal of building sustainable, impactful programs that address food insecurity.`,
   },
