@@ -26,12 +26,13 @@ export default function AnimatedHero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/food.png"
+          src="/testgifbf.gif"
           alt="Background"
           fill
           className="object-cover"
           priority
           quality={100}
+          unoptimized
         />
       </div>
 
