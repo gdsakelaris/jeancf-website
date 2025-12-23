@@ -20,14 +20,28 @@ export default function Navbar({ showDonateButton = true }: NavbarProps) {
           />
           <span className="text-xl font-bold text-white">{BRAND.name}</span>
         </Link>
-        {showDonateButton && (
+        <div className="flex items-center gap-6">
           <Link
-            href={ROUTES.donate}
-            className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+            href={ROUTES.home}
+            className="text-white hover:text-red-600 font-medium transition-colors hidden md:block"
           >
-            Donate Now
+            Home
           </Link>
-        )}
+          <Link
+            href={ROUTES.team}
+            className="text-white hover:text-red-600 font-medium transition-colors hidden md:block"
+          >
+            Our Team
+          </Link>
+          {showDonateButton && (
+            <Link
+              href={ROUTES.donate}
+              className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+            >
+              Donate Now
+            </Link>
+          )}
+        </div>
       </div>
     </nav>
   );

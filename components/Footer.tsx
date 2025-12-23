@@ -16,13 +16,18 @@ export default function Footer() {
             <h4 className="font-bold text-white mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href={ROUTES.donate} className="text-gray-400 hover:text-red-600">
-                  Donate
+                <Link href={ROUTES.home} className="text-gray-400 hover:text-red-600">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href={ROUTES.home} className="text-gray-400 hover:text-red-600">
-                  Home
+                <Link href={ROUTES.team} className="text-gray-400 hover:text-red-600">
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link href={ROUTES.donate} className="text-gray-400 hover:text-red-600">
+                  Donate
                 </Link>
               </li>
             </ul>
