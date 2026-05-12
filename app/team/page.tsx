@@ -19,13 +19,13 @@ const teamMembers = [
   {
     name: 'Madan Rajavel',
     title: 'Vice President',
-    image: '/team/madan-rajavel.jpg',
+    image: '/madan-r.jpg',
     bio: `Madan is a strategic leader with over 25 years of experience, specializing in business transformation through technology and innovation. He excels at developing out-of-the-box strategies, standardizing technologies, and optimizing platform investments. As technology continues to evolve at an unprecedented pace, Madan's experience will be critical in leveraging these tools to reach our most vulnerable communities, while also enhancing customer engagement and overall experiences.`,
   },
   {
     name: 'Erin Hardnett',
     title: 'Secretary',
-    image: '/team/erin-hardnett.jpg',
+    image: '/erin-hardnett.jpg',
     bio: `Erin is a passionate advocate for using technology to address food insecurity and ensure that all at-risk children have access to quality food and fresh produce. She firmly believes that every child and adult deserves the nutrition they need to realize their full potential.
 
 Erin is deeply committed to supporting the fund's mission of combating childhood hunger through compassionate giving and strong community partnerships.`,
@@ -33,7 +33,7 @@ Erin is deeply committed to supporting the fund's mission of combating childhood
   {
     name: 'Jay Carter',
     title: 'Treasurer',
-    image: '/team/jay-carter.jpg',
+    image: '/jay_carter.jpg',
     bio: `Jay is deeply passionate about addressing food insecurity and strongly aligns with the organization's mission. His professional career spans over 40 years in the pharmaceutical and pharmacy space. Jay's expertise provides valuable insight as the organization works to combat food insecurity, strengthen community health outcomes, and ensure sustainable access to essential nutrition for vulnerable populations.`,
   },
 ];
