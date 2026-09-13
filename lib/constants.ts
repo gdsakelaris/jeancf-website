@@ -31,6 +31,7 @@ export const ROUTES = {
   donate: "/donate",
   success: "/success",
   team: "/team",
+  impact: "/impact",
 } as const;
 
 // Validation constants

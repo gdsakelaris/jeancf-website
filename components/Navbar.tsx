@@ -28,6 +28,12 @@ export default function Navbar({ showDonateButton = true }: NavbarProps) {
             Home
           </Link>
           <Link
+            href={ROUTES.impact}
+            className="text-white hover:text-red-600 font-medium transition-colors hidden md:block"
+          >
+            Our Impact
+          </Link>
+          <Link
             href={ROUTES.team}
             className="text-white hover:text-red-600 font-medium transition-colors hidden md:block"
           >

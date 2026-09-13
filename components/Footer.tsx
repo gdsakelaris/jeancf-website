@@ -21,6 +21,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href={ROUTES.impact} className="text-gray-400 hover:text-red-600">
+                  Our Impact
+                </Link>
+              </li>
+              <li>
                 <Link href={ROUTES.team} className="text-gray-400 hover:text-red-600">
                   Our Team
                 </Link>
