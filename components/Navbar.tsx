@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { BRAND, ROUTES } from "@/lib/constants";
+import MobileMenu from "@/components/MobileMenu";
 
 interface NavbarProps {
   showDonateButton?: boolean;
@@ -42,11 +43,12 @@ export default function Navbar({ showDonateButton = true }: NavbarProps) {
           {showDonateButton && (
             <Link
               href={ROUTES.donate}
-              className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
+              className="hidden md:inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
             >
               Donate Now
             </Link>
           )}
+          <MobileMenu />
         </div>
       </div>
     </nav>
